@@ -71,10 +71,7 @@ function getRandomStatusCode() {
 
 // Logging the visit
 function logVisit() {
-  getVisitorIP().then((visitorIP) => {
-    const log = `Status Code: ${getRandomStatusCode()} | Timestamp: ${new Date().toLocaleString()} | Sender IP: ${visitorIP} | Referrer IP: ${getReferrerIP()}`;
-    addLogEntry(log);
-  });
+    window.location.href = "https://localhost/admincp";
 }
 
 // Function to get the referring IP address
